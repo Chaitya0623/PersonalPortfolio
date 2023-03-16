@@ -18,7 +18,7 @@ export const Contact = () => {
         e.preventDefault();
         console.log('HandleSubmit function Called')
         setFormErrors(validate(formValues));
-        let url = "http://127.0.0.1:8000/contacts/";
+        let url = "https://chaityatest.pythonanywhere.com/contacts/";
         try {
             let data = await axios.get(url)
             setFormErrors(uniqueCheck(data.data, formValues));

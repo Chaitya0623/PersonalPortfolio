@@ -1,0 +1,39 @@
+.workEx {
+    position: relative;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10em;
+  }
+.workEx-box {
+    background: #191919;
+    border-radius: 64px;
+    text-align: center;
+    padding: 3em 4em;
+    margin-top: -3em;
+  }
+.workEx h1 {
+      font-size: 3.5em;
+      font-weight: 700;
+  }
+.timeline{
+  overflow-x: hidden;
+  position: relative;
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+.workExImg{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+
+@media (max-width: 1080px) {
+  .workEx h1{
+      font-size: calc(3vw + 1.8em);
+  }
+}
+
+@media (max-width: 760px) {
+  .workEx{
+    display: none !important;
+  }
+}

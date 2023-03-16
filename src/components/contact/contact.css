@@ -1,0 +1,126 @@
+/* ===== Contact Section ===== */
+.contact h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+}
+.contact{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10em;
+  }
+.contact-box{
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(64, 24, 245, 0.5) 111.58%);
+    border-radius: 64px;
+    text-align: center;
+    padding: 3em 4em;
+    margin-top: -3em;
+    margin: 5em;
+}
+.contact-main{
+    text-align: center;
+}
+.contact-text{
+    display: flex;
+    align-items: space-around;
+}
+.contact-text img{
+    height: 25em;
+    max-width: 25em;
+    border-radius: 2em;
+    margin: 2em;
+}
+.contact-text form{
+    width: 100%;
+    border-radius: 4px;
+    position: relative;
+    padding: 6em 2em 2em;
+}
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0.6em 0;
+    position: relative;
+    background: white;
+    border-radius: 20px;
+}
+.input-group label{
+    flex-basis: 28%;
+}
+.input-group input, .input-group textarea{
+    flex-basis: 68%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 0.5em 0;
+    font-size: 1em;
+}
+::placeholder{
+    font-size: 1em;
+}
+form button{
+    background-color: #af307e;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    margin-top: 0.7em;
+}
+form button:hover{
+    background-color: transparent;
+    border: 2px solid #af307e;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+label{
+    color: #101010;
+    font-size: 1em;
+    margin: 0.7em;
+    font-weight: bold;
+}
+.error{
+    color: #f9004d;
+    position: absolute;
+    right: 1em;
+}
+.ui-message-success{
+    color: seagreen;
+    margin-top: 0.6em;
+}
+
+@media (max-width: 1340px) {
+    .contact-text{
+        flex-direction: column;
+        align-items: center;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -5em;
+    }
+    .input-group{
+        width: calc(1vh + 15em);
+    }
+    .contact h1{
+        font-size: calc(3vw + 2em);
+    }
+    .contact-box{
+        margin: 0;
+
+    }
+    .contact-text img{
+        height: calc(1vw + 15em);
+    }
+    .input-group input, .input-group textarea{
+        font-size: calc(.5vh + .5em);
+    }
+    .input-group label{
+        flex-basis: calc(1vh + 28%);
+    }
+}

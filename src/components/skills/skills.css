@@ -1,0 +1,61 @@
+/* ===== Skills Section ===== */
+.skill {
+    position: relative;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10em;
+  }
+  .skill-box {
+    background: #191919;
+    border-radius: 64px;
+    text-align: center;
+    padding: 3em 4em;
+    margin-top: -3em;
+  }
+  .skill h1 {
+      font-size: 3.5em;
+      font-weight: 700;
+  }
+  .skill p {
+    color: #B8B8B8;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    letter-spacing: 0.8px;
+    line-height: 1.3em;
+  }
+  .skill-slider {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    transition: auto 1000ms;
+  }
+  .skill-card{
+    border: 1px solid white;
+    height: 6em;
+    display: inline;
+  }
+  .item h5{
+    margin-top: 0.6em;
+    font-size: 1.5em;
+  }
+  .item:hover{
+    color: rgba(170, 54, 124);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.4s;
+  }
+
+  @media (max-width: 1080px) {
+    .skill p{
+        font-size: calc(1vw + 1em);
+    }
+    .skill h1{
+        font-size: calc(3vw + 2em);
+    }
+    .item h5{
+      font-size: calc((1vw + 1em));
+    }
+    .skill-slider {
+      width: 80%;
+    }
+}
